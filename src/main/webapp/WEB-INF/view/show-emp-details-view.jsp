@@ -12,6 +12,10 @@
 <h2>Welcome!</h2>
 <br>
 <br>
-Your name: ${nameAttribute}
+Your name: ${employee.name}
+<br><br>
+Your surname: ${employee.surname}
+<br><br>
+Salary: ${employee.salary}
 </body>
 </html>

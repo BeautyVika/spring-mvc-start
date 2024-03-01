@@ -1,20 +1,29 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: victoria
-  Date: 1.03.24
-  Time: 15:37
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!DOCTYPE html>
+
 <html>
 <body>
 <h2>Enter details</h2>
 <br>
 <br>
-<form action="showDetails" method="get">
-    <input type="text" name="employeeName" placeholder="Write your name..." />
+<form:form action="showDetails" modelAttribute="employee">
+    <br><br>
+    Name <form:input path="name"/>
+    <br><br>
+    Surname <form:input path="surname"/>
+    <br><br>
+    Salary <form:input path="salary"/>
 
-    <input type="submit"/>
-</form>
+    <br><br>
+    <input type="submit" value="Ok">
+
+</form:form>
+<%--<form action="showDetails" method="get">--%>
+<%--    <input type="text" name="employeeName" placeholder="Write your name..." />--%>
+
+<%--    <input type="submit"/>--%>
+<%--</form>--%>
 </body>
 </html>
+
+
