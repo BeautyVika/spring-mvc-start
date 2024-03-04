@@ -1,5 +1,6 @@
 package com.example.spring_mvc;
 
+import com.example.spring_mvc.validation.CheckEmail;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -27,6 +28,8 @@ public class Employee {
     private Map<String, String> listLanguages;
     @Pattern(regexp = "\\d{3}-\\d{2}-\\d{2}", message = "please use patten xxx-xx-xx")
     private String phoneNumbers;
+    @CheckEmail
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();

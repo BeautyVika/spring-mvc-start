@@ -23,5 +23,7 @@ Language(s): <ul>
 </ul>
 <br><br>
 Phone number: ${employee.phoneNumbers}
+<br><br>
+Email: ${employee.email}
 </body>
 </html>
