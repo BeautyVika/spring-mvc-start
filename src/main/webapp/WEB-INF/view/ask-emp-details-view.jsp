@@ -9,10 +9,13 @@
 <form:form action="showDetails" modelAttribute="employee">
     <br><br>
     Name <form:input path="name"/>
+    <form:errors path="name"/>
     <br><br>
     Surname <form:input path="surname"/>
+    <form:errors path="surname"/>
     <br><br>
     Salary <form:input path="salary"/>
+    <form:errors path="salary"/>
     <br><br>
     Department <form:select path="department">
     <form:options items="${employee.departments}" />
@@ -33,6 +36,10 @@
 <%--    <form:checkbox path="languages" value="Deught"/> DE--%>
 <%--    <form:checkbox path="languages" value="French"/> FR--%>
     <br><br>
+    Phone Number <form:input path="phoneNumbers"/>
+    <form:errors path="phoneNumbers"/>
+    <br><br>
+
     <input type="submit" value="Ok">
 </form:form>
 <%--<form action="showDetails" method="get">--%>
