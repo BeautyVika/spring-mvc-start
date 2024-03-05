@@ -6,7 +6,7 @@
 <h2>Enter details</h2>
 <br>
 <br>
-<form:form action="showDetails" modelAttribute="employee">
+<form:form action="showDetails" modelAttribute="employee" method="get">
     <br><br>
     Name <form:input path="name"/>
     <form:errors path="name"/>
